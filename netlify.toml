@@ -1,0 +1,6 @@
+[build]
+  functions = "functions"
+  publish = "."
+
+[functions.convert]
+  runtime = "python3.9"
