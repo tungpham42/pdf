@@ -18,7 +18,7 @@
         const arrayBuffer = await file.arrayBuffer();
         const fileData = new TextDecoder("latin1").decode(arrayBuffer);
 
-        const response = await fetch("/.netlify/functions/convert", {
+        const response = await fetch("/.functions/convert", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ file: fileData }),
